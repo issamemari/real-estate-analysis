@@ -88,9 +88,10 @@ def main():
     args = parser.parse_args()
 
     # get effective yearly interest rate
-    equivalent_periodic_rate = get_equivalent_periodic_rate(
-        args.interest_rate, args.compounding_periods
-    )
+    # equivalent_periodic_rate = get_equivalent_periodic_rate(
+    #     args.interest_rate, args.compounding_periods
+    # )
+    equivalent_periodic_rate = args.interest_rate / args.compounding_periods
     print("Equivalent periodic rate: {:.8%}".format(equivalent_periodic_rate))
 
     total_periods = args.years * args.compounding_periods
