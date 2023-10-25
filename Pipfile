@@ -9,6 +9,10 @@ pandas = "*"
 plotly = "*"
 numpy-financial = "*"
 requests = "*"
+ipykernel = "*"
+nbformat = ">=4.2.0"
+autotrain-advanced = "*"
+h2o = "*"
 
 [dev-packages]
 
